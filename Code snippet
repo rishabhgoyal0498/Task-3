@@ -1,0 +1,29 @@
+#Shape
+import pandas as pd
+
+# Load your dataset into a Pandas DataFrame
+data = pd.read_csv('your_dataset.csv')
+
+# Get the shape of the DataFrame
+shape = data.shape
+
+print("Shape of the dataset:", shape)
+
+#Datatypes
+import pandas as pd
+
+# Load your dataset into a Pandas DataFrame
+data = pd.read_csv('your_dataset.csv')
+
+# Get the data types of all columns
+column_data_types = data.dtypes
+
+print(column_data_types)
+
+#Null and missing values
+
+
+
+
+
+
