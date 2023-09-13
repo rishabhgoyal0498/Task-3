@@ -21,7 +21,10 @@ column_data_types = data.dtypes
 print(column_data_types)
 
 #Null and missing values
-
+#Count the empty (NaN, NAN, na) values in each column
+data.isna().sum()
+#Another check for any null / missing values
+data.isnull().values.any()
 
 
 
