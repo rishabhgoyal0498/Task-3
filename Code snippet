@@ -9,11 +9,7 @@ shape = data.shape
 
 print("Shape of the dataset:", shape)
 
-#Datatypes
-import pandas as pd
 
-# Load your dataset into a Pandas DataFrame
-data = pd.read_csv('your_dataset.csv')
 
 # Get the data types of all columns
 column_data_types = data.dtypes
@@ -25,6 +21,19 @@ print(column_data_types)
 data.isna().sum()
 #Another check for any null / missing values
 data.isnull().values.any()
+
+
+# Use value_counts() to count unique values in a categorical column
+value_counts = data['categorical_column'].value_counts()
+
+# Print the value counts
+print(value_counts)
+
+
+
+# Calculate the correlation matrix (Pearson correlation)
+correlation_matrix = data.corr()
+print(correlation_matrix)
 
 
 
